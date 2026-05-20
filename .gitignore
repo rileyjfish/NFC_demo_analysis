@@ -4,58 +4,21 @@
 !.git/
 !.github/
 
-# Allow only narrative and journal_figures directories
-!narrative/
-!narrative/**
+# Allow only journal_figures directory
 !analysis/
 !analysis/outputs/
 !analysis/outputs/journal_figures/
 !analysis/outputs/journal_figures/**
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb_checkpoints/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-*.log
-
-# Temp files
-~$*
+# Allow narrative directory but only LaTeX project files
+!narrative/
+narrative/*
+!narrative/*.tex
+!narrative/*.cls
+!narrative/*.sty
+!narrative/*.bib
+!narrative/*.bbl
+!narrative/*.blg
+!narrative/Makefile
+!narrative/README.md
+!narrative/.latexmkrc
