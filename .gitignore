@@ -1,3 +1,17 @@
+# Ignore everything by default
+*
+!.gitignore
+!.git/
+!.github/
+
+# Allow only narrative and journal_figures directories
+!narrative/
+!narrative/**
+!analysis/
+!analysis/outputs/
+!analysis/outputs/journal_figures/
+!analysis/outputs/journal_figures/**
+
 # Python
 __pycache__/
 *.py[cod]
@@ -31,11 +45,6 @@ venv.bak/
 .ipynb_checkpoints
 *.ipynb_checkpoints/
 
-# Data files (large datasets)
-*.nc
-*.hdf5
-*.h5
-
 # IDE
 .vscode/
 .idea/
@@ -48,35 +57,5 @@ venv.bak/
 Thumbs.db
 *.log
 
-# Compiled shapefiles can be large
-*.shp
-*.dbf
-*.shx
-*.prj
-*.sbn
-*.sbx
-
-# Database files
-*.mdb
-*.db
-*.sqlite
-
-# Exclude large directories
-demographic_data/raw/
-demographic_data/compiled/
-epa_mines/
-facility_data/
-
-# Exclude analysis outputs EXCEPT journal_figures
-analysis/outputs/demographics_by_county/
-analysis/outputs/demographics_by_facility/
-analysis/outputs/sensitivity_analysis/
-analysis/outputs/statistics/
-analysis/outputs/totalpop_singlebuffers/
-
-# Output files (but allow journal_figures)
-/analysis/outputs/**/*.png
-/analysis/outputs/**/*.jpg
-/analysis/outputs/**/*.jpeg
-!/analysis/outputs/journal_figures/
-!/analysis/outputs/journal_figures/**
+# Temp files
+~$*
