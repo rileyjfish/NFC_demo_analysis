@@ -73,4 +73,11 @@ Thumbs.db
 demographic_data/raw/
 demographic_data/compiled/
 epa_mines/
-analysis/outputs/
+facility_data/
+
+# Exclude analysis outputs EXCEPT journal_figures
+analysis/outputs/demographics_by_county/
+analysis/outputs/demographics_by_facility/
+analysis/outputs/sensitivity_analysis/
+analysis/outputs/statistics/
+analysis/outputs/totalpop_singlebuffers/
