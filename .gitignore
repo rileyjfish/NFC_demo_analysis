@@ -48,14 +48,6 @@ venv.bak/
 Thumbs.db
 *.log
 
-# Output files
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.mp4
-*.avi
-
 # Compiled shapefiles can be large
 *.shp
 *.dbf
@@ -81,3 +73,10 @@ analysis/outputs/demographics_by_facility/
 analysis/outputs/sensitivity_analysis/
 analysis/outputs/statistics/
 analysis/outputs/totalpop_singlebuffers/
+
+# Output files (but allow journal_figures)
+/analysis/outputs/**/*.png
+/analysis/outputs/**/*.jpg
+/analysis/outputs/**/*.jpeg
+!/analysis/outputs/journal_figures/
+!/analysis/outputs/journal_figures/**
